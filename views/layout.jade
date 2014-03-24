@@ -8,9 +8,11 @@ html
 
     title= title
     
-    link(rel='stylesheet', href='css/master.css')
+    link(rel='stylesheet', href='/css/master.css')
   body
-    != content
+    .container
+        include _navbar
+        != content
 
     //- add other scripts through require.js, not here
     script(data-main="js/main", src="js/require.js")

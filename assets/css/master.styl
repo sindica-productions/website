@@ -1,7 +1,30 @@
 @import '_settings'
 
+grid()
 normalize()
 base()
 
+.container
+  margin: 0 auto
+  width: 960px
+  text-align: left
+
+.navbar
+  column(12)
+  inline-list(110px)
+  margin-bottom: 40px
+
+  li a
+    fs(2em)
+    link(color=font-color)
+
+.video
+  column(12)
+  margin: 0px
+
 body
-  padding: 50px
+  background-color: background-color
+  margin-top: 40px
+  text-align: center
+
+
